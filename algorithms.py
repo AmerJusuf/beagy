@@ -250,16 +250,31 @@ def display_timeline_gui(completed_tasks: Dict[str, List[List[float]]]):
 # Example usage in your main code:
 def main():
     # Your existing Task and TaskScheduler code here...
-    tasks = [    #TODO: Task(name, period, runtime, start_time, priority)
-        Task("Server Task", 10, 0.5, 0, 0),
-        Task("Task 1", 40, 10, 35.1, 1),
-        Task("Task 2", 80, 15, 20.2, 2),
-        Task("Task 3", 160, 20, 25.3, 3),
-        Task("Task 4", 320, 75, 0.4, 4),
+
+    tasks = [
+        #TODO: Task(name, period, runtime, start_time, priority)
+        Task("Server Task", 2, 0.5, 0, 6),
+        Task("Task 1", 8, 2, 3.1, 1),
+        Task("Task 2", 16, 3, 4.2, 2),
+        Task("Task 3", 32, 4, 1.3, 3),
+        Task("Task 4", 64, 15, 0.4, 4),
         Task("Empty", 10000, 3000, 0, 5) ## Ne módosítds ide kerülnek a kihasználatlan processzoridők
     ]
+
+    """
+    tasks = [    #TODO: Task(name, period, runtime, start_time, priority)
+        Task("Server Task", 12, 0.5, 0, 6),
+        Task("Task 1", 48, 12, 6.1, 1),
+        Task("Task 2", 96, 18, 48.2, 2),
+        Task("Task 3", 192, 24, 36.3, 3),
+        Task("Task 4", 384, 90, 0.4, 4),
+        Task("Empty", 10000, 3000, 0, 5) ## Ne módosítds ide kerülnek a kihasználatlan processzoridők
+    ]
+"""
+
+
     # TODO: LNKO a max time-hoz
-    scheduler = TaskScheduler(tasks, max_time=320)
+    scheduler = TaskScheduler(tasks, max_time=64)
     completed_times = scheduler.schedule_rate_monotonic()
 
     empty_time_sum = 0
@@ -271,6 +286,9 @@ def main():
     # Display the GUI
     display_timeline_gui(completed_times)
     display_schedule(completed_times)
+
+    empty_times = {"Empty": completed_times["Empty"]}
+    display_timeline_gui(empty_times)
 
 if __name__ == "__main__":
     main()

@@ -13,9 +13,9 @@ def display_schedule(data):
     # Loop over tasks and their respective schedules
     for i, task in enumerate(tasks):
         schedule = data[task]
-        for start_time, duration in schedule:
+        for start_time, end_time in schedule:
             # Create a rectangle for each task period
-            ax.add_patch(patches.Rectangle((start_time, i), duration, 0.8, edgecolor='black', facecolor='skyblue'))
+            ax.add_patch(patches.Rectangle((start_time, i), end_time-start_time, 0.8, edgecolor='black', facecolor='skyblue'))
 
     # Set task names on y-axis
     ax.set_yticks(range(len(tasks)))
@@ -26,7 +26,7 @@ def display_schedule(data):
     ax.set_ylabel('Tasks')
 
     # Set axis limits based on your time horizon
-    max_time = max([max([start + dur for start, dur in v]) for v in data.values() if v])
+    max_time = max([max([start + end-start for start, end in v]) for v in data.values() if v])
     ax.set_xlim(0, max_time + 1)
     ax.set_ylim(-0.5, len(tasks) - 0.5)
 

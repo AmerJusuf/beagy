@@ -1,8 +1,9 @@
 
-npython:S1192½"NDefine a constant instead of duplicating this literal "Header.TLabel" 3 times.(­úş8üèÄ·±2
-ppython:S1192¾"KDefine a constant instead of duplicating this literal "Row.TLabel" 3 times.(İ…öúÿÿÿÿ8üèÄ·±2
-hpython:S14816"%Remove the unused local variable "a".(«ÎâÿşÿÿÿÿJ$52930157-3d63-4255-a3a1-5519216706f5
-spython:S37761"TRefactor this function to reduce its Cognitive Complexity from 16 to the 15 allowed.(¥º½Ï8ıèÄ·±2
-wpython:S12445":Do not perform equality checks with floating point values.(‹²‰wJ$5ed42d07-bf0a-44a8-9d68-08d4ddc7c96b
-Ypython:S1135ı"4Complete the task associated to this "TODO" comment.(ûöÖÿùÿÿÿÿ8şèÄ·±2
-Tpython:S1135…"4Complete the task associated to this "TODO" comment.(ÇÏÖÊ8şèÄ·±2
+”python:S1192½"NDefine a constant instead of duplicating this literal "Header.TLabel" 3 times.(­úş8ïÇ›¸±2J$46ad0978-87ec-48f1-accf-9a6f31b181a7
+–python:S1192¾"KDefine a constant instead of duplicating this literal "Row.TLabel" 3 times.(İ…öúÿÿÿÿ8ïÇ›¸±2J$c7ea1eb1-9b2e-471b-a68a-f91f33357d05
+hpython:S14816"%Remove the unused local variable "a".(«ÎâÿşÿÿÿÿJ$2c5e952c-db33-4207-8c38-7ae8393e2887
+™python:S37761"TRefactor this function to reduce its Cognitive Complexity from 16 to the 15 allowed.(¥º½Ï8ğÇ›¸±2J$8355143b-9402-45fa-9aab-824a575e7bb9
+wpython:S12445":Do not perform equality checks with floating point values.(‹²‰wJ$e4cc2d37-e58c-4dad-a70b-8b75183cf9e3
+python:S1135ÿ"4Complete the task associated to this "TODO" comment.(ŸÁ¯Òûÿÿÿÿ8ñÇ›¸±2J$b6ad040c-177c-48d9-b694-810753ab79f1
+dpython:S125ˆ"Remove this commented out code.(…Óµ•8ñÇ›¸±2J$4b1ab36c-be90-4f63-90d7-374eb5eca128
+zpython:S1135”"4Complete the task associated to this "TODO" comment.(ÇÏÖÊ8òÇ›¸±2J$6eed1db4-0c85-47bc-87df-415959d3ed65
